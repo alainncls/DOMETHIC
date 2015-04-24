@@ -1,0 +1,39 @@
+Sur www.json-generator.com
+
+Ressources
+[
+    '{{repeat(50)}}',
+    {
+        id: '{{index()+1}}',
+        idPatient: '{{integer(1,15)}}',
+        idAuthor: '{{integer(1,5)}}',
+        title: '{{lorem(2,"words")}}',
+        type:  function (tags) {
+            var f = ['image', 'texte'];
+            return f[tags.integer(0, f.length - 1)];
+        },
+        text: '{{lorem(5)}}',
+        category: function (tags) {
+            var fruits = ['Radiologie', 'Traumatologie', 'Chirurgie'];
+            return fruits[tags.integer(0, fruits.length - 1)];
+        },
+        img: function (tags) {
+            var t = ['http://4.bp.blogspot.com/-30PbkwPxCVg/TjlRDWibJ4I/AAAAAAAABT8/-IgsxAAHxjk/s1600/20100113_003.jpg', 'http://fr.fc2m.com/medias/radio_crane_irm.jpg', 'http://www.pied-orteils.com/Upload/image/radio_face.jpg', 'http://www.med.univ-rennes1.fr/cerf/iconocerf/OA/940207122000-I3.jpg'];
+            return t[tags.integer(0, t.length - 1)];
+        },
+        date: '{{date(new Date(2010, 0, 1), new Date(), "YYYY-MM-dd")}}'
+  }
+]
+
+News
+[
+    '{{repeat(50)}}',
+    {
+        id: '{{index()+1}}',
+        idPatient: '{{integer(1,15)}}',
+        date: '{{date(new Date(2010, 0, 1), new Date(), "YYYY-MM-dd")}}',
+        newsTitle: '{{lorem(2,"words")}}',
+        newsContent: '{{lorem(2)}}'
+        
+  }
+]

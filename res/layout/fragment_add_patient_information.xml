@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/very_light_blue">
+    
+   	<LinearLayout 
+    	android:layout_marginTop="@dimen/activity_margin_top"
+    	android:gravity="center" style="@style/CoolPanel"> 
+
+    	<include
+    	    android:id="@+id/add_patient_summary_layout"
+    	    android:layout_height="350dp"
+    	    layout="@layout/include_fragment_add_patient_summary" />
+
+	</LinearLayout>	
+	
+  	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"> 
+
+    	<include
+    	    android:id="@+id/add_patient_general_layout"
+    	    android:layout_height="128dp"
+    	    layout="@layout/include_fragment_add_patient_general" />
+
+	</LinearLayout>
+	
+	<!-- Layout santé général -->
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+    	android:background="@drawable/panel_very_light" style="@style/CoolPanel"
+    	android:layout_weight="1"> 
+		
+		<TextView
+		    android:text="@string/patient_info_important"
+		    android:textStyle="bold"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="@dimen/small_font_size"/>
+		<EditText
+		    android:id="@+id/add_patient_health_info"
+		    android:hint="@string/default_patient_info_important"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="@dimen/small_font_size"/>
+		
+		
+	</LinearLayout>
+	<Button
+	    		
+ 	    android:id="@+id/add_patient_button"
+	    android:text="@string/add_patient"
+	    android:layout_gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="@dimen/small_font_size"
+		android:background="@drawable/buttonshape"
+ 	        />
+
+
+</LinearLayout>

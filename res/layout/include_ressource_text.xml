@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" 
+        android:background="@drawable/panel_very_light" style="@style/CoolPanel">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ressource_observations"
+            android:textSize="@dimen/large_font_size" />
+
+        <TextView
+            android:id="@+id/ressource_observations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsmall_font_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+            <TextView
+                android:text="@string/ressource_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        		android:gravity="center_horizontal"
+                android:textSize="@dimen/xsmall_font_size"
+                android:layout_marginRight="20dp" />
+            <TextView
+                android:id="@+id/ressource_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        		android:gravity="center_horizontal"
+                android:textSize="@dimen/xsmall_font_size"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
