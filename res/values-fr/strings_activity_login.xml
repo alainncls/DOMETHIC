@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="title_activity_login">Connexion</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_login">Identifiant</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="action_sign_in_register"><b>Se connecter</b></string>
+    <string name="action_sign_in_short">Se connecter</string>
+    <string name="login_progress_signing_in">Connexion&#8230;</string>
+    <string name="error_invalid_login">Identifiant non valide</string>
+    <string name="error_invalid_password">Mot de passe non valide</string>
+    <string name="error_incorrect_password">Mot de passe incorect</string>
+    <string name="error_field_required">Champ obligatoire</string>
+
+</resources>

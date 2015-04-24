@@ -1,0 +1,306 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+    
+   	<LinearLayout 
+        android:layout_gravity="center"
+    	android:orientation="horizontal"
+    	android:layout_marginTop="@dimen/activity_margin_top"
+    	android:gravity="center" style="@style/CoolPanel"> 
+    	
+		<ImageView
+		    android:id="@+id/user_image"
+		    android:src="@drawable/male"
+		    android:contentDescription="@string/profile_picture"
+		    android:layout_width="@dimen/patient_icon_profile"
+		    android:layout_height="@dimen/patient_icon_profile"
+		    android:layout_margin="25dp" />  
+
+	    <LinearLayout 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:orientation="vertical">
+			
+			<TextView
+			    android:id="@+id/user_name"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:lines="1" 
+			    android:text="@string/user_name"
+		    	android:textSize="40sp" />
+			
+			    
+			<LinearLayout 
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"> 
+		    	<TextView
+				    android:text="@string/birthDay"
+				    android:textStyle="bold"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:lines="1"
+				    android:layout_marginRight="@dimen/space"
+				    android:textSize="@dimen/small_font_size" />
+		    	<TextView
+				    android:id="@+id/birthday"
+				    android:text="@string/default_birthDay"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:lines="1"
+				    android:textSize="@dimen/small_font_size" />
+		    	<TextView
+				    android:text="@string/birthLocation"
+				    android:textStyle="bold"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:lines="1"
+				    android:layout_marginLeft="@dimen/space"
+				    android:layout_marginRight="@dimen/space"
+				    android:textSize="@dimen/small_font_size" />
+	    	    <TextView
+				    android:id="@+id/birthLocation"
+				    android:text="@string/default_birthLocation"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:lines="1"
+				    android:textSize="@dimen/small_font_size" />
+	    	</LinearLayout>			
+		    <LinearLayout 
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal">
+	    	    
+		        <TextView
+				    android:id="@+id/p_number"
+				    android:text="@string/phone_number"
+			  	    android:textStyle="bold"
+				    android:lines="1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="@dimen/small_font_size"/>
+				
+				<TextView
+				    android:id="@+id/phone_number"
+				    android:text="@string/default_phone_number"
+				    android:lines="1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="@dimen/small_font_size"/>
+    	    </LinearLayout>
+    	    <LinearLayout 
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal">
+    	        <TextView
+				    android:id="@+id/e_m"
+				    android:text="@string/e_mail"
+			   	    android:textStyle="bold"
+				    android:lines="1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="@dimen/small_font_size"/>
+				
+				<TextView
+				    android:id="@+id/e_mail"
+				    android:text="@string/default_e_mail"
+				    android:lines="1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="@dimen/small_font_size"/>
+    	    </LinearLayout>
+	    </LinearLayout>
+	</LinearLayout>	
+	
+
+  	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"> 
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+        	android:gravity="center_horizontal"
+		    android:layout_weight="1"
+		    android:orientation="vertical"
+    		android:background="@drawable/panel_very_light" style="@style/CoolPanel"> 
+    	    
+ 	    	<TextView
+			    android:text="@string/user_address"
+		   	    android:textStyle="bold"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+   			    android:gravity="center_horizontal"
+			    android:textSize="@dimen/small_font_size"/>
+ 	    	
+ 	    	 <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:gravity="center_vertical"
+			    android:orientation="vertical" >
+	    	    <LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal" >
+	    	        <TextView
+					    android:text="@string/Address"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:textStyle="bold"
+					    android:textSize="@dimen/small_font_size"/>
+					<TextView
+					    android:id="@+id/user_address"
+					    android:layout_width="0dp"
+					    android:layout_weight="2"
+					    android:layout_height="wrap_content"
+					    android:text="@string/default_address"
+					    android:textSize="@dimen/small_font_size" />
+	    	    </LinearLayout>
+	    	    
+	    	    <LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal" >
+	    	        <TextView
+					    android:text="@string/ZIP_Code"
+					    android:layout_width="0dp"
+					    android:layout_weight="1"
+					    android:layout_height="wrap_content"
+					    android:textStyle="bold"
+					    android:textSize="@dimen/small_font_size"/>
+					<TextView
+					    android:id="@+id/user_city"
+					     android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="2"
+					    android:text="@string/default_address"
+					    android:textSize="@dimen/small_font_size" />
+	    	    </LinearLayout>
+	    	    
+	    	    <LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal" >
+	    	        <TextView
+					    android:text="@string/City"
+					    android:layout_width="0dp"
+					    android:layout_weight="1"
+					    android:layout_height="wrap_content"
+					    android:textStyle="bold"
+					    android:textSize="@dimen/small_font_size"/>
+					<TextView
+					    android:id="@+id/user_zip"
+					     android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="2"
+					    android:text="@string/default_address"
+					    android:textSize="@dimen/small_font_size" />
+	    	    </LinearLayout>
+    	    </LinearLayout>
+		</LinearLayout>
+		
+		<!-- Layout Info user -->
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	      	android:layout_height="wrap_content"
+        	android:gravity="center_horizontal"
+	      	android:layout_weight="1"
+	        android:orientation="vertical"
+    		android:background="@drawable/panel_very_light" style="@style/CoolPanel"> 
+			
+		   	<TextView
+			    android:text="@string/account_informations"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textStyle="bold"
+			    android:textSize="@dimen/small_font_size"/>
+		   	
+   		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		      	android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+   		        <TextView
+				    android:text="@string/cps_number"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textStyle="bold"
+				    android:textSize="@dimen/small_font_size"/>
+			   	<TextView
+				    android:id="@+id/user_cps_number"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="2"				    
+				    android:text="@string/default_cps_number"
+				    android:textSize="@dimen/small_font_size"/>
+   		    </LinearLayout>
+		   	
+		   	<LinearLayout 
+		        android:layout_width="fill_parent"
+		      	android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		   	    <TextView
+				    android:text="@string/login"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textStyle="bold"
+				    android:textSize="@dimen/small_font_size"/>
+			   	<TextView
+				    android:id="@+id/user_login"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="2"
+				    android:text="@string/default_login"
+				    android:textSize="@dimen/small_font_size"/>
+		   	</LinearLayout>
+		   	
+		   	<LinearLayout 
+		        android:layout_width="fill_parent"
+		      	android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		   	    <TextView
+				    android:text="@string/Location"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textSize="@dimen/small_font_size"
+				    android:textStyle="bold" />
+			   	<TextView
+				    android:id="@+id/user_location"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="2"
+				    android:text="@string/default_Location"
+				    android:textSize="@dimen/small_font_size"/>
+		   	</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+		<!-- Layout santé général -->
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+    	android:background="@drawable/panel_very_light" style="@style/CoolPanel"
+    	android:layout_weight="1.3"> 
+		
+		<TextView
+		    android:text="@string/user_info_important"
+		    android:textStyle="bold"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="@dimen/small_font_size"/>
+		<TextView
+		    android:id="@+id/user_health_info"
+		    android:text="@string/default_user_info_important"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="@dimen/small_font_size"/>
+		
+	</LinearLayout>
+
+</LinearLayout>

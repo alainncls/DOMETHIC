@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="activity_margin_center">180dp</dimen>
+    <dimen name="activity_margin_top">8dp</dimen>
+    
+    <dimen name="news_name_width">150dp</dimen>
+    <dimen name="news_text_width">800dp</dimen>
+    
+    <dimen name="separation_width">1400dp</dimen>
+</resources>

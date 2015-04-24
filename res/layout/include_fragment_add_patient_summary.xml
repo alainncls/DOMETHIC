@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+    
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:lines="1"
+	            android:text="@string/patient_name"
+	            android:textSize="@dimen/small_font_size"
+	            android:textStyle="bold" />
+
+	        <EditText
+	            android:id="@+id/add_patient_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:hint="@string/patient_name"
+	            android:lines="1"
+	            android:textSize="@dimen/small_font_size" />
+	        <TextView
+				    android:text="@string/sex"
+		            android:textSize="@dimen/small_font_size"
+		            android:textStyle="bold" 
+		            android:layout_marginLeft="@dimen/space"
+		            android:layout_marginRight="@dimen/space"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center" />
+			   	<RadioGroup 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:id="@+id/sexe_selection">
+			
+				    <RadioButton
+				        android:id="@+id/male_option"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:onClick="onRadioButtonClicked"
+				        android:text="@string/sex_male" />
+			
+				    <RadioButton 
+				        android:id="@+id/female_option"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/sex_female"
+				        android:onClick="onRadioButtonClicked"/>
+				</RadioGroup>
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="@dimen/space"
+	            android:lines="1"
+	            android:text="@string/birthDay"
+	            android:textSize="@dimen/small_font_size"
+	            android:textStyle="bold" />
+
+	        <EditText
+	            android:id="@+id/add_birthday"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:hint="@string/default_birthDay"
+	            android:lines="1"
+	            android:textSize="@dimen/small_font_size" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/space"
+	            android:layout_marginRight="@dimen/space"
+	            android:lines="1"
+	            android:text="@string/birthLocation"
+	            android:textSize="@dimen/small_font_size"
+	            android:textStyle="bold" />
+
+	        <EditText
+	            android:id="@+id/add_birthLocation"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:hint="@string/default_birthLocation"
+	            android:lines="1"
+	            android:textSize="@dimen/small_font_size" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:id="@+id/p_number"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:lines="1"
+	            android:text="@string/phone_number"
+	            android:textSize="@dimen/small_font_size"
+	            android:textStyle="bold" />
+
+	        <EditText
+	            android:id="@+id/add_phone_number"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="@dimen/space"
+	            android:hint="@string/default_phone_number"
+	            android:inputType="phone"
+	            android:lines="1"
+	            android:textSize="@dimen/small_font_size" />
+	        <TextView
+	            android:id="@+id/e_m"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:lines="1"
+	            android:layout_marginLeft="@dimen/space"
+	            android:text="@string/e_mail"
+	            android:textSize="@dimen/small_font_size"
+	            android:textStyle="bold" />
+
+	        <EditText
+	            android:id="@+id/add_e_mail"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:hint="@string/default_e_mail"
+	            android:inputType="textWebEmailAddress"
+	            android:lines="1"
+	            android:textSize="@dimen/small_font_size" />
+	    </LinearLayout>
+	    
+		
+</LinearLayout>

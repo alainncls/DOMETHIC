@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <TextView
+	    android:text="@string/patient_address"
+   	    android:textStyle="bold"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:textSize="@dimen/small_font_size"/>
+  	    <LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+	 	    <TextView
+			    android:text="@string/Address"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:textStyle="bold"
+			    android:textSize="@dimen/small_font_size"/>
+			<EditText
+			    android:id="@+id/add_patient_address"
+			    android:hint="@string/Address"
+			    android:layout_width="0dp"
+			    android:layout_weight="2"
+			    android:layout_height="wrap_content"
+			    android:textSize="@dimen/small_font_size" />
+  	    </LinearLayout>
+  	    <LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+  	        <TextView
+			    android:text="@string/City"
+			    android:layout_width="0dp"
+			    android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:textStyle="bold"
+			    android:textSize="@dimen/small_font_size"/>
+			<EditText
+			    android:id="@+id/add_patient_city"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="2"
+			    android:hint="@string/City"
+			    android:textSize="@dimen/small_font_size" />
+  	    </LinearLayout>
+  	    <LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+  	        <TextView
+			    android:text="@string/ZIP_Code"
+			    android:layout_width="0dp"
+			    android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:textStyle="bold"
+			    android:textSize="@dimen/small_font_size"/>
+			<EditText
+			    android:id="@+id/add_patient_zip"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="2"
+			    android:hint="@string/ZIP_Code"
+			    android:textSize="@dimen/small_font_size" />
+  	    </LinearLayout>
+</LinearLayout>

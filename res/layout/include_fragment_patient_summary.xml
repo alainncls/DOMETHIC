@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp" >
+    
+    <ImageView
+	    android:id="@+id/patient_image"
+	    android:src="@drawable/male"
+	    android:contentDescription="@string/profile_picture"
+	    android:layout_width="@dimen/patient_icon_profile"
+	    android:layout_height="@dimen/patient_icon_profile"
+	    android:layout_marginRight="100dp"/>  
+
+	<!-- Layout Patient Personnal Information -->
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginRight="100dp">
+		
+		<TextView
+		    android:id="@+id/patient_name"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:lines="1"
+		    android:text="@string/patient_name"
+	    	android:textSize="40sp" />
+	    
+		<LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:layout_marginTop="10dp"> 
+   	    	<TextView
+			    android:text="@string/birthDay"
+			    android:textStyle="bold"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:lines="1"
+			    android:layout_marginRight="@dimen/space"
+			    android:textSize="@dimen/small_font_size" />
+	    	<TextView
+			    android:id="@+id/birthday"
+			    android:text="@string/default_birthDay"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:lines="1"
+			    android:textSize="@dimen/small_font_size" />
+	    	<TextView
+			    android:text="@string/birthLocation"
+			    android:textStyle="bold"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:lines="1"
+			    android:layout_marginLeft="@dimen/space"
+			    android:layout_marginRight="@dimen/space"
+			    android:textSize="@dimen/small_font_size" />
+    	    <TextView
+			    android:id="@+id/birthLocation"
+			    android:text="@string/default_birthLocation"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:lines="1"
+			    android:textSize="@dimen/small_font_size" />
+    	</LinearLayout>			
+	    <LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal">
+    	    
+	        <TextView
+			    android:id="@+id/p_number"
+			    android:text="@string/phone_number"
+		  	    android:textStyle="bold"
+			    android:lines="1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="@dimen/small_font_size"/>
+			
+			<TextView
+			    android:id="@+id/phone_number"
+			    android:text="@string/default_phone_number"
+			    android:lines="1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="@dimen/small_font_size"/>
+   	    </LinearLayout>
+   	    <LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:layout_marginBottom="10dp">
+   	        <TextView
+			    android:id="@+id/e_m"
+			    android:text="@string/e_mail"
+		   	    android:textStyle="bold"
+			    android:lines="1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="@dimen/small_font_size"/>
+			
+			<TextView
+			    android:id="@+id/e_mail"
+			    android:text="@string/default_e_mail"
+			    android:lines="1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="@dimen/small_font_size"/>
+   	    </LinearLayout>
+   	        
+    </LinearLayout>
+</LinearLayout>
